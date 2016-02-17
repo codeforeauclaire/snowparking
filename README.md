@@ -63,7 +63,7 @@ I, Anthony, am comfortable enough with these technologies and think they fit our
 }
 ```
 
-## Proposed API internal application methods
+## Proposed API internal methods
 
 Quick to code and dirty to start.  Optomize later iff needed.
 
