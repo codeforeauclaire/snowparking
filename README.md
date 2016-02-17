@@ -1,6 +1,6 @@
 Solving the Eau Claire snow parking issue, preventing tickets one ticket at a time
 
-## API
+## Proposed API
 
 ### GET /status
 
@@ -41,18 +41,18 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
 }
 ```
 
-## Proposed Infrastructure
+## Proposed API Infrastructure
 
 We gotta pick something.  This is close to what I, Anthony, am currently working with and propose we use it.
 
-* node.js - Scalable will takes lots of hits creating an API. No need for a full stack
+* node.js - Scalable will takes lots of hits creating an API. No need for a full MVC stack.
 * MongoDB - Simple data store, could be anything really.  Will scale well enough.
 * IFTTT - Connector to get from Email to our app
  * This: https://ifttt.com/email (Inbound email setup for subscription from http://eauclairewi.gov/about-us/sign-up-for-e-notifications)
  * That: https://ifttt.com/maker (To make an HTTP call to our application)
 * AWS Free tier - Run everything on a single server.  Good for one year.
  
-## Proposed database structure
+## Proposed API database structure
 
 ### Notifications
 ```
@@ -63,7 +63,7 @@ We gotta pick something.  This is close to what I, Anthony, am currently working
 }
 ```
 
-## Proposed internal application methods
+## Proposed API internal application methods
 
 Quick to code and dirty to start.  Optomize later iff needed.
 
