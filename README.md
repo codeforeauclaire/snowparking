@@ -43,7 +43,7 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
 
 ## Proposed API Infrastructure
 
-We gotta pick something.  This is close to what I, Anthony, am currently working with and propose we use it.
+I, Anthony, am comfortable enough with these technologies and think they fit our needs just fine. I'm hoping another couple around are also, but in the end it's at least JavaScript which most devs are familiar with, and could get up to speed hacking on quickly given a little setup guidance.
 
 * node.js - Scalable will takes lots of hits creating an API. No need for a full MVC stack.
 * MongoDB - Simple data store, could be anything really.  Will scale well enough.
