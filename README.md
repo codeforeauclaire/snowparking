@@ -69,7 +69,7 @@ Quick to code and dirty to start.  Optomize later iff needed.
 
 ### Method: ParseNotification(notfication)
 
-#### Output: Array of objects defining alternate side parking like this (Relating to a single notification):
+Return: Array of objects defining alternate side parking like this (Relating to a single notification):
 ```
 [
 	{
@@ -88,7 +88,7 @@ Calls ParseNotification over all recent notifications in the database.
 * Removes duplicates / smart choice of most recent notification
 * Sorts schedule results newest first
 
-#### Output: Array of objects defining alternate side parking like this (Relating to a all recent notifications):
+Return: Array of objects defining alternate side parking like this (Relating to a all recent notifications):
 ```
 [
 	{
@@ -105,12 +105,12 @@ Calls ParseNotification over all recent notifications in the database.
 ### GET /status
 
 1. Call ```GetSchedule(...)``` 
-2. Return if any results are in the current time frame
+2. Output if any results are in the current time frame
 
 ### GET /schedule
 
 1. Call ```GetSchedule(...)``` 
-2. Return all schedule results
+2. Output all schedule results
 
 ### POST /notification
 
