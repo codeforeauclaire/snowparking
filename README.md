@@ -46,6 +46,7 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
 I, Anthony, am comfortable enough with these technologies and think they fit our needs just fine. I'm hoping another couple around are also, but in the end it's at least JavaScript which most devs are familiar with, and could get up to speed hacking on quickly given a little setup guidance.
 
 * node.js - Scalable will takes lots of hits creating an API. No need for a full MVC stack.
+ * Express.js - "Fast, unopinionated, minimalist web framework for Node.js" (We need something for routes, ...) (Most Node.js REST server tutorials seem to point to using Express)
 * MongoDB - Simple data store, could be anything really.  Will scale well enough.
 * IFTTT - Connector to get from Email to our app
  * This: https://ifttt.com/email (Inbound email setup for subscription from http://eauclairewi.gov/about-us/sign-up-for-e-notifications)
