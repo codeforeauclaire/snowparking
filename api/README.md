@@ -11,12 +11,10 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
 1. Setup MongoDB
  1. ```sudo apt-get install mongodb-org```
  1. ```cd api```
-1. Run MongoDB
- 1. ```mongod --dbpath mongo_data```
-1. Create MongoDB Database
- 1. ```use snowapi```
 1. Run
- 1. node app.js
+ 1. ```cd api```
+ 1. ```serve-mongo```
+ 1. ```serve-node```
 1. Configure server
  1. Open up port 3000 as needed
 1. Confirm running
