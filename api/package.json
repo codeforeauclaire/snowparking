@@ -12,5 +12,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anthony Astige on behalf of Code for Eau Claire",
-  "license": ""
+  "license": "",
+  "git": "git@github.com:codeforeauclaire/snowparking.git/api"
 }
