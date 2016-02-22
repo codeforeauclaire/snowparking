@@ -4,7 +4,8 @@
   "description": "API For Eau Claire's Snow Parking",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongodb": "^2.1.7"
   },
   "devDependencies": {},
   "scripts": {

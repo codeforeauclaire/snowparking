@@ -1,10 +1,20 @@
 Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure standards around raw node.js projects
 
+1. Make server
+ 1. Presumed Ubuntu server
 1. Install node
  1. ```sudo apt-get install node```?
-1. Setup
+1. Setup app
  1. ```cd api```
  1. ```npm install express --save```
+ 1. ```npm install mongo --save```
+1. Setup MongoDB
+ 1. ```sudo apt-get install mongodb-org```
+ 1. ```cd api```
+1. Run MongoDB
+ 1. ```mongod --dbpath mongo_data```
+1. Create MongoDB Database
+ 1. ```use snowapi```
 1. Run
  1. node app.js
 1. Configure server
