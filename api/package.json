@@ -1,0 +1,15 @@
+{
+  "name": "snowparking-api",
+  "version": "0.0.0",
+  "description": "API For Eau Claire's Snow Parking",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Astige on behalf of Code for Eau Claire",
+  "license": ""
+}
