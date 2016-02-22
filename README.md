@@ -105,15 +105,15 @@ Return: Array of objects defining alternate side parking like this (Relating to 
 
 ### GET /status
 
-1. Call ```GetSchedule(...)``` 
+1. Call ```GetSchedule(...)```
 2. Output if any results are in the current time frame
 
 ### GET /schedule
 
-1. Call ```GetSchedule(...)``` 
+1. Call ```GetSchedule(...)```
 2. Output all schedule results
 
 ### POST /notification
 
-1. Call ```ParseNotification(...)``` 
+1. Call ```ParseNotification(...)```
 2. Store result in MongoDB as JSON object
