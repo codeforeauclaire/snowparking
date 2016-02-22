@@ -2,6 +2,7 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
 
 1. Make server
  1. Presumed Ubuntu server
+1. Get code on server somehow (Later to be automated release cycle?)
 1. Install node
  1. ```sudo apt-get install node```?
 1. Setup app
