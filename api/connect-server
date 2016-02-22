@@ -1,0 +1,5 @@
+# Original command from AWS
+# ssh -i "snowparkingserver.pem" ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com
+
+# Script that works if you have your ~/.ssh/id_rsa.pub copied to the servers ~/.ssh/authorized_keys
+ssh ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com
