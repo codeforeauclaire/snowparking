@@ -1,11 +1,11 @@
 Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure standards around raw node.js projects
 
-1. Make server
- 1. Presumed Ubuntu server
+1. Setup server
+ 1. Make free tier Ubuntu server with AWS
+ 1. ```sudo apt-get install node```
+ 1.	```sudo apt-get install npm```
 1. Get code on server
  1. ```./deploy```
-1. Install node
- 1. ```sudo apt-get install node```?
 1. Setup app
  1. ```cd api```
  1. ```npm install express --save```
