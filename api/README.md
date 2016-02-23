@@ -14,7 +14,7 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
  1. ```npm install mongo --save```
 1. Run
  1. ```cd api```
- 1. ```serve-mongo```
+ 1. ```serve-mongo``` (Will error if not needed / already running)
  1. ```serve-node```
 1. Configure server
  1. Open up port 3000 as needed

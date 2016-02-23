@@ -1,1 +1,6 @@
+# Only if mongo doesn't start it's self
+## For when using Mongo executables from Meteor.js
+if [ ! -d "mongo_data" ]; then
+	mkdir mongo_data
+fi
 mongod --dbpath mongo_data
