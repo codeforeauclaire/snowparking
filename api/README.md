@@ -5,15 +5,13 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
  1. ```sudo apt-get update```
  1. ```sudo apt-get install node```
  1.	```sudo apt-get install npm```
+ 1. ```sudo apt-get install mongodb```
 1. Get code on server
  1. ```./deploy```
 1. Setup app
  1. ```cd api```
  1. ```npm install express --save```
  1. ```npm install mongo --save```
-1. Setup MongoDB
- 1. ```sudo apt-get install mongodb-org```
- 1. ```cd api```
 1. Run
  1. ```cd api```
  1. ```serve-mongo```
