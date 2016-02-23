@@ -4,7 +4,7 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
  1. Make free tier Ubuntu server with AWS
  1. ```sudo apt-get update```
  1. ```sudo apt-get install nodejs```
-  1. May need to run ```ln /usr/bin/nodejs /usr/sbin/node``` [StackOverflow Reference](https://stackoverflow.com/questions/24721182/when-i-run-node-nothing-happens-the-same-with-forever)
+      1. May need to run ```sudo ln /usr/bin/nodejs /usr/sbin/node``` [StackOverflow Reference](https://stackoverflow.com/questions/24721182/when-i-run-node-nothing-happens-the-same-with-forever)
  1.	```sudo apt-get install npm```
  1. ```sudo apt-get install mongodb```
 1. Get code on server
@@ -16,8 +16,8 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
  1. ```sudo npm link mongodb``` (Seemed to have helped [StackOverflow Reference](http://stackoverflow.com/a/16842904))
 1. Run
  1. ```cd api```
- 1. ```serve-mongo``` (Will error if not needed / already running)
- 1. ```serve-node```
+ 1. ```./serve-mongo``` (Will error if not needed / already running)
+ 1. ```./serve-node```
 1. Configure server
  1. Open up port 3000 as needed
 1. Confirm running
