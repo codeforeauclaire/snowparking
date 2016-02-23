@@ -2,6 +2,7 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
 
 1. Setup server
  1. Make free tier Ubuntu server with AWS
+ 1. ```sudo apt-get update```
  1. ```sudo apt-get install node```
  1.	```sudo apt-get install npm```
 1. Get code on server
