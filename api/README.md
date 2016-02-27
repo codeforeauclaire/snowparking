@@ -13,6 +13,8 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
  1. ```cd api```
  1. ```npm install express --save```
  1. ```npm install mongo --save```
+ 1. ```npm install moment --save```
+ 1. ```npm install moment-timezone --save```
  1. ```sudo npm link mongodb``` (Seemed to have helped [StackOverflow Reference](http://stackoverflow.com/a/16842904))
 1. Run
  1. ```cd api```

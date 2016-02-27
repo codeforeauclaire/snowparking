@@ -2,6 +2,7 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
+var moment = require('moment-timezone');
 
 app.listen(3000, function() {
 	console.log('Example app listening on port 3000!');
@@ -39,6 +40,7 @@ router.get('/', function(req, res) {
 	});
 });
 
+/// Helper methods
 // From SO @ https://goo.gl/9hrWsI
 /**
  *  * Returns a random integer between min (inclusive) and max (inclusive)
@@ -46,6 +48,27 @@ router.get('/', function(req, res) {
  *    */
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+/// Methods to generate stub data
+function pastTodaysCutOff() {
+	var todaysCutOff = moment().startOf('day').hour(17).format();
+	return (moment().diff(todaysCutOff, 'seconds') >= 0);
+}
+function getStartTime() {
+	if (pastTodaysCutOff()) {
+		return moment().tz('America/Chicago').startOf('day').add(1, 'day').format();
+	} else {
+		return moment().tz('America/Chicago').startOf('day').format();
+	}
+}
+function getEndTime() {
+	if (pastTodaysCutOff()) {
+		return moment().tz('America/Chicago').startOf('day').add(1, 'day').hour(17).format();
+	} else {
+		return moment().tz('America/Chicago').startOf('day').hour(17).format();
+	}
 }
 
 router.get('/status', function(req, res) {
@@ -57,9 +80,9 @@ router.get('/status', function(req, res) {
 			},
 			{
 				error: false,
-			    alternateSideParking: 'even',
-			    startTime: 'Put today\'s start time here',
-				endTime: 'Put end of time here'
+			    alternateSideParking: ['even', 'odd'][getRandomInt(0, 1)],
+				startTime: getStartTime(),
+			    endTime: getEndTime()
 			}
 		][getRandomInt(0, 1)]
 	);
