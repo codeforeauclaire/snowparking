@@ -34,7 +34,41 @@ MongoClient.connect(url, function(err, db) {
 router.get('/', function(req, res) {
 	res.json({
 		'error': false,
-		'message': 'Hello World'
+		'message': 'Please refer to documentation at' +
+			'https://github.com/codeforeauclaire/snowparking'
+	});
+});
+
+// From SO @ https://goo.gl/9hrWsI
+/**
+ *  * Returns a random integer between min (inclusive) and max (inclusive)
+ *   * Using Math.round() will give you a non-uniform distribution!
+ *    */
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+router.get('/status', function(req, res) {
+	res.json(
+		[
+			{
+				error: false,
+			    alternateSideParking: false
+			},
+			{
+				error: false,
+			    alternateSideParking: 'even',
+			    startTime: 'Put today\'s start time here',
+				endTime: 'Put end of time here'
+			}
+		][getRandomInt(0, 1)]
+	);
+});
+
+router.get('/schedule', function(req, res) {
+	res.json({
+		'error': false,
+		'message': 'schedule'
 	});
 });
 
