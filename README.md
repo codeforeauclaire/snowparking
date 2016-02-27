@@ -8,9 +8,10 @@ For consumption by front end applications to get the current snow parking status
 
 ```
 {
+	error: String | false,
 	alternateSideParking: even|odd|false,
-	startTime: timestamp|false,
-	endTime: timestamp|false
+	startTime: timestamp|null,
+	endTime: timestamp|null
 }
 ```
 
@@ -19,14 +20,22 @@ For consumption by front end applications to get the current snow parking status
 For consumption by front end applications to get projected snow parking statuses
 
 ```
-[
-	{
-		alternateSideParking: even|odd|false,
-		startTime: timestamp,
-		endTime: timestamp
-	},
-	...
-]
+{
+	error: String | false,
+	schedule: [
+		{
+			alternateSideParking: even|odd,
+			startTime: timestamp,
+			endTime: timestamp
+		},
+		{
+			alternateSideParking: even|odd,
+			startTime: timestamp,
+			endTime: timestamp
+		},
+		...
+	]
+}
 ```
 
 ### POST /notification
