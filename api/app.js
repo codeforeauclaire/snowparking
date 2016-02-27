@@ -50,24 +50,27 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 /// Methods to generate stub data
 function pastTodaysCutOff() {
 	var todaysCutOff = moment().startOf('day').hour(17).format();
 	return (moment().diff(todaysCutOff, 'seconds') >= 0);
 }
-function getStartTime() {
+function getStartTime(daysAdd) {
 	if (pastTodaysCutOff()) {
-		return moment().tz('America/Chicago').startOf('day').add(1, 'day').format();
+		return moment().tz('America/Chicago').startOf('day')
+			.add(daysAdd + 1, 'day').format();
 	} else {
-		return moment().tz('America/Chicago').startOf('day').format();
+		return moment().tz('America/Chicago').startOf('day')
+			.add(daysAdd, 'day').format();
 	}
 }
-function getEndTime() {
+function getEndTime(daysAdd) {
 	if (pastTodaysCutOff()) {
-		return moment().tz('America/Chicago').startOf('day').add(1, 'day').hour(17).format();
+		return moment().tz('America/Chicago').startOf('day')
+			.add(daysAdd + 1, 'day').hour(17).format();
 	} else {
-		return moment().tz('America/Chicago').startOf('day').hour(17).format();
+		return moment().tz('America/Chicago').startOf('day')
+			.add(daysAdd, 'day').hour(17).format();
 	}
 }
 
@@ -81,18 +84,42 @@ router.get('/status', function(req, res) {
 			{
 				error: false,
 			    alternateSideParking: ['even', 'odd'][getRandomInt(0, 1)],
-				startTime: getStartTime(),
-			    endTime: getEndTime()
+				startTime: getStartTime(0),
+			    endTime: getEndTime(0)
 			}
 		][getRandomInt(0, 1)]
 	);
 });
 
 router.get('/schedule', function(req, res) {
-	res.json({
-		'error': false,
-		'message': 'schedule'
-	});
+	res.json(
+		[
+			{
+				error: false,
+				schedule: []
+			},
+			{
+				error: false,
+				schedule: [
+					{
+					    alternateSideParking: 'even',
+						startTime: getStartTime(0),
+					    endTime: getEndTime(0)
+					},
+					{
+					    alternateSideParking: 'odd',
+						startTime: getStartTime(1),
+					    endTime: getEndTime(1)
+					},
+					{
+					    alternateSideParking: 'even',
+						startTime: getStartTime(2),
+					    endTime: getEndTime(2)
+					}
+				]
+			}
+		][getRandomInt(0, 1)]
+	);
 });
 
 app.use('/', router);
