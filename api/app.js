@@ -4,8 +4,8 @@ var app = express();
 var router = express.Router();
 var moment = require('moment-timezone');
 
-app.listen(3000, function() {
-	console.log('Example app listening on port 3000!');
+app.listen(3050, function() {
+	console.log('Example app listening on port 3050!');
 });
 
 //lets require/import the mongodb native drivers.
