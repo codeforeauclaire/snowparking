@@ -1,1 +1,2 @@
+pkill node
 nohup node app.js > ~/nohup.snowparking-api.log &
