@@ -75,6 +75,7 @@ function getEndTime(daysAdd) {
 }
 
 router.get('/status', function(req, res) {
+	res.setHeader('Access-Control-Allow-Origin', '*');
 	res.json(
 		[
 			{
@@ -92,6 +93,7 @@ router.get('/status', function(req, res) {
 });
 
 router.get('/schedule', function(req, res) {
+	res.setHeader('Access-Control-Allow-Origin', '*');
 	res.json(
 		[
 			{
