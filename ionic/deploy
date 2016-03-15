@@ -1,3 +1,0 @@
-# Hacked script Anthony is using to deploy
-# TODO: Fix this just like the api deploy script to sync better (delete deleted files)
-scp -r * ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com:~/snowparking/ionic/
