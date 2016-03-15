@@ -20,5 +20,9 @@ n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,
 # Check Node version
 node -v
 
-# Install Ionic
-sudo npm install ionic@beta --save
+# Install Ionic command globally
+sudo npm install -g ionic@beta
+
+# Check Ionic command availble
+ioninc -v
+ionic
