@@ -26,3 +26,9 @@ sudo npm install -g ionic@beta
 # Check Ionic command availble
 ioninc -v
 ionic
+
+# Misc Ionic hack trials (ownership overkill)
+sudo chown -R $(whoami) ~/
+
+# Build something
+cd ~/snowparking/ionic/ && ionic build browser
