@@ -7,14 +7,28 @@
 <ion-content class="home">
   <ion-card>
     <ion-card-header>
-      {{ message1a }}
+      {{ headerLine1 }}
       <br/>
-      {{ message1b }}
+      {{ headerLine2 }}
+      <br/>
+      {{ headerLine3 }}
+      <br/>
+      {{ headerLine4 }}
     </ion-card-header>
     <ion-card-content>
-      {{ message2a }}
+      {{ contentHeading }}
       <br/>
-      {{ message2b }}
     </ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="#item of contentList">
+        {{ item }}
+      </ion-item>
+    </ion-list>
   </ion-card>
+  <ion-list class="center" *ngFor="#link of links">
+    <a href="{{ link.url }}">
+      {{ link.text }}
+    </a>
+  </ion-list>
 </ion-content>
+
