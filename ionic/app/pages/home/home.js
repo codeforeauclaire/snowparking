@@ -72,7 +72,7 @@ export class HomePage {
         'These provisions shall not supersede more restrictive parking regulations in effect in the city.'
       ];
       this.url = [
-        'url: http://eauclairewi.gov/home/showdocument?id=11399',
+        'http://eauclairewi.gov/home/showdocument?id=11399',
         'http://twitter.com/cityofecstreets',
         'http://facebook.com/cityofeauclaire'
       ];
