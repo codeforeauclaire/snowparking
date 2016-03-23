@@ -5,30 +5,30 @@
 </ion-navbar>
 
 <ion-content class="home">
+  <ion-refresher (start)="doStart($event)"
+                 (refresh)="doRefresh($event)"
+                 (pulling)="doPulling($event)">
+  </ion-refresher>
   <ion-card>
     <ion-card-header>
-      {{ headerLine1 }}
-      <br/>
-      {{ headerLine2 }}
-      <br/>
-      {{ headerLine3 }}
-      <br/>
-      {{ headerLine4 }}
+      <ion-item text-wrap *ngFor="#heading of headers">
+        {{ heading }}
+        </ion-item>
     </ion-card-header>
-    <ion-card-content>
-      {{ contentHeading }}
-      <br/>
-    </ion-card-content>
-    <ion-list>
-      <ion-item *ngFor="#item of contentList">
-        {{ item }}
-      </ion-item>
-    </ion-list>
+    <!--<ion-card-content>-->
+    <!--<ion-item *ngFor="#contentHeading of contentHeadings">-->
+    <!--{{ contentHeading }}-->
+    <!--</ion-item>-->
+    <!--</ion-card-content>-->
+    <!--<ion-list>-->
+    <!--<ion-item text-wrap *ngFor="#contentItem of contentList">-->
+    <!--{{ contentItem }}-->
+    <!--</ion-item>-->
+    <!--</ion-list>-->
   </ion-card>
-  <ion-list class="center" *ngFor="#link of links">
+  <ion-list text-wrap class="center" *ngFor="#link of links">
     <a href="{{ link.url }}">
       {{ link.text }}
     </a>
   </ion-list>
 </ion-content>
-
