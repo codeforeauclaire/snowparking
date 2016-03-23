@@ -67834,7 +67834,7 @@
 
 	        this.contentHeadings = ['alternate side parking is in effect beginning at 12:01 a.m. on 2-3-16 for 72 hours.'];
 	        this.contentList = ['On odd-numbered days, vehicles shall NOT be parked, stopped, or left standing on that side of the street having even-numbered addresses.', 'On even-numbered days, vehicles shall NOT be parked, stopped, or left standing on the side of the street having odd-numbered addresses.', 'On odd-numbered days, vehicles shall ONLY be parked, stopped, or left standing on that side of the street having odd-numbered addresses if also allowed by normal parking regulations.', 'On even-numbered days, vehicles shall ONLY be parked, stopped, or left standing on the side of the street having even-numbered addresses if also allowed by normal parking regulations.', 'These provisions shall only be in effect between 12:00am{midnight) and 5:00p.m.', 'These provisions shall not supersede more restrictive parking regulations in effect in the city.'];
-	        this.url = ['url: http://eauclairewi.gov/home/showdocument?id=11399', 'http://twitter.com/cityofecstreets', 'http://facebook.com/cityofeauclaire'];
+	        this.url = ['http://eauclairewi.gov/home/showdocument?id=11399', 'http://twitter.com/cityofecstreets', 'http://facebook.com/cityofeauclaire'];
 	        this.text = ['alternate Side parking Fact Sheet', 'Twitter', 'Facebook'];
 	        this.links = [];
 	        for (var i = 0; i < 3; i++) {
