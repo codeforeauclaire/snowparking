@@ -1,34 +1,16 @@
 <ion-navbar *navbar>
   <ion-title>
-    City of Eau Claire Snow Emergency Parking Information
+    Home
   </ion-title>
 </ion-navbar>
 
 <ion-content class="home">
   <ion-card>
     <ion-card-header>
-      {{ headerLine1 }}
-      <br/>
-      {{ headerLine2 }}
-      <br/>
-      {{ headerLine3 }}
-      <br/>
-      {{ headerLine4 }}
+      Card Header
     </ion-card-header>
     <ion-card-content>
-      {{ contentHeading }}
-      <br/>
+      Hello World
     </ion-card-content>
-    <ion-list>
-      <ion-item *ngFor="#item of contentList">
-        {{ item }}
-      </ion-item>
-    </ion-list>
   </ion-card>
-  <ion-list class="center" *ngFor="#link of links">
-    <a href="{{ link.url }}">
-      {{ link.text }}
-    </a>
-  </ion-list>
 </ion-content>
-
