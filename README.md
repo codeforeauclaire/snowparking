@@ -50,6 +50,35 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
   receivedAt: timestamp
 }
 ```
+#### IFTTT Gmail Trigger
+
+"Any new email in inbox for"
+
+Could be setup with filters, etc, but this keeps it simple.  A single purpose gmail account where we expect all emails to be from the city.
+
+#### IFTTT Maker Action
+
+##### URL
+
+http://{DevOrProduction.com}/notification
+
+##### Method
+
+Post
+
+##### Content Type:
+
+application/json
+
+##### Body
+```
+{
+    fromAddress:"<<<{{FromAddress}}>>>",
+    subject:"<<<{{Subject}}>>>",
+    bodyPlain:"<<<{{BodyPlain}}>>>",
+    receivedAt:"<<<{{ReceivedAt}}>>>"
+}
+```
 
 ## Proposed API Infrastructure
 
