@@ -44,9 +44,10 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
 
 ```
 {
-  subject: (email subject)
-  body: (email body)
-  received: timestamp
+  fromAddress: (Name <address@domain.com>),
+  subject: (email subject),
+  bodyPlain: (email body),
+  receivedAt: timestamp
 }
 ```
 
