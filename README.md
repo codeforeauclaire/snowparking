@@ -45,7 +45,6 @@ Collect notifications emails from http://eauclairewi.gov/about-us/sign-up-for-e-
 ```
 {
   fromAddress: (Name <address@domain.com>),
-  subject: (email subject),
   bodyPlain: (email body),
   receivedAt: timestamp
 }
@@ -75,10 +74,17 @@ application/json
 {
     fromAddress:"<<<{{FromAddress}}>>>",
     subject:"<<<{{Subject}}>>>",
-    bodyPlain:"<<<{{BodyPlain}}>>>",
     receivedAt:"<<<{{ReceivedAt}}>>>"
 }
 ```
+
+Note: Originally intended to include the email body included in IFTTT Maker Body
+```
+ bodyPlain:"<<<{{BodyPlain}}>>>",
+```
+However IFTTT doesn't want to pass it along nicely.  It may be due to the city's Base64 email body encoding.  More investigation may solve this, but it could take a few hours of developer time, and the subject we expect to suffice.
+
+This could be resolved maybe using Zapier instead with custom receiver addresses, and optionally a gmail forwarding to reformat it. However they have a free zap limit we don't want to test (and they change it from time to time). There also may be another solution using IFTTT we haven't discovered.
 
 ## Proposed API Infrastructure
 
