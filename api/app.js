@@ -23,20 +23,28 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 var url = 'mongodb://localhost:27017/snowapi';
 
-// Use connect method to connect to the Server
-MongoClient.connect(url, function(err, db) {
-	if (err) {
-		console.log('Unable to connect to the mongoDB server. Error:', err);
-	} else {
-		//HURRAY!! We are connected. :)
-		console.log('Connection established to', url);
+// Method to connect to, use the database in the callback, and close the connection
+// Callback is passed two parameters
+// 1) the mongo database object
+// 2) a method to call when done with the connection (so it can be closed);
+var useDb = function(callback) {
+	// Use connect method to connect to the Server
+	MongoClient.connect(url, function(err, db) {
+		if (err) {
+			console.log('Unable to connect to the mongoDB server. Error:', err);
+		} else {
+			//HURRAY!! We are connected. :)
+			console.log('Connection established to', url);
 
-		// do some work here with the database.
-
-		//Close connection
-		db.close();
-	}
-});
+			// do some work here with the database.
+			callback(db, function() {
+				//Close connection
+				db.close();
+				console.log('Connection closed');
+			});
+		}
+	});
+};
 
 router.get('/', function(req, res) {
 	res.json({
@@ -131,7 +139,11 @@ router.get('/schedule', function(req, res) {
 });
 
 router.post('/notification', function(req, res) {
-	console.log(req.body);
+	useDb(function(db, done) {
+		db.collection('notifications').insertOne(req.body);
+		console.log('Inserted');
+		done();
+	});
 	res.json(
 		{
 			error: false
