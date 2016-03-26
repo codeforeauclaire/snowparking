@@ -1,8 +1,14 @@
 'use strict';
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 var router = express.Router();
 var moment = require('moment-timezone');
+
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
+	extended: true
+}));
 
 app.listen(3050, function() {
 	console.log('Example app listening on port 3050!');
@@ -121,6 +127,15 @@ router.get('/schedule', function(req, res) {
 				]
 			}
 		][getRandomInt(0, 1)]
+	);
+});
+
+router.post('/notification', function(req, res) {
+	console.log(req.body);
+	res.json(
+		{
+			error: false
+		}
 	);
 });
 

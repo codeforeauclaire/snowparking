@@ -1,0 +1,3 @@
+#!/bin/bash
+# Inspired to do on the shell quickly from http://stackoverflow.com/a/16870452
+curl -i -X POST -H 'Content-Type: application/json' -d '{"fromAddress": "BotBot <localbot@fake.com>", "subject": "Not Really an email", "bodyPlain": "The body of the email would go here", "receivedAt":"Some well formed date goes here"}' http://ubs.fowk.com:3050/notification

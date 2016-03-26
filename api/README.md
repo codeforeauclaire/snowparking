@@ -1,3 +1,9 @@
+Dev setup instruction
+1. npm install -g nodemon
+1. npm install --save
+1. ./serve-node
+(These instructions need further fleshing out and test on a fresh machine)
+
 Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure standards around raw node.js projects
 
 1. Setup server
@@ -12,6 +18,7 @@ Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure 
 1. Setup app
  1. ```cd api```
  1. ```npm install express --save```
+ 1. ```npm install --save body-parser```
  1. ```npm install mongo --save```
  1. ```npm install moment --save```
  1. ```npm install moment-timezone --save```
