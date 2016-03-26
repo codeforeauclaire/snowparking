@@ -1,2 +1,2 @@
 # Hacked script Anthony is using to deploy
-rsync --del -r . ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com:~/snowparking
+rsync --exclude 'mongo_data' --exclude 'node_modules' --del -r . ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com:~/snowparking
