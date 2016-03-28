@@ -1,4 +1,4 @@
-This is just the beginning of the Ionic application readme for the Eau Claire Snowparking project
+This is the Ionic application readme for the Eau Claire Snowparking project [WIP]
 
 ## Dependencies to compile for web app
 
