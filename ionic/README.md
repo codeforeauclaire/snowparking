@@ -18,6 +18,15 @@ OS: Distributor ID:     Debian Description:     Debian GNU/Linux 7.9 (wheezy)
 Node Version: v5.8.0  
 ```
 
+Install ionic project requirements, from ionic directory type:
+
+```
+npm install
+```
+
+if reinstalling from older version of the project, I recommend completely removing  
+everything and starting over, including the ```node_modules``` directory  
+
 ## Compile for web app
 
 from this ionic directory type:
