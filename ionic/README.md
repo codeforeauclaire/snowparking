@@ -44,6 +44,8 @@ rm -rf build
 cp -r ionic/www/build .
 ```
 
+and then merge this master branch into the ```gh-pages``` branch
+
 ## Compile for mobile app via IonicView
 
 from the ionic directory type:
