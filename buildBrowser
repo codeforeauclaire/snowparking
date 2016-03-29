@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Config
+# SCRIPT_PATH From SO @ https://goo.gl/JvL92M
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+	DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+	SOURCE="$(readlink "$SOURCE")"
+	[[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+SCRIPT_PATH="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+# Clear the old build
+rm -rf "$SCRIPT_PATH/build/"
+
+# Build it
+(cd ionic && echo "quit" | ionic serve)
+
+# Copy build where github can serve it
+cp -r $SCRIPT_PATH/ionic/www/build ./
