@@ -31,9 +31,15 @@ everything and starting over, including the ```node_modules``` directory
 
 from this ionic directory type:
 
+### Option 1 (Auto-rebuilding)
 ```
-ionic serve  
+ionic serve
 quit
+```
+
+### Option 2 (1 time building - May need `npm install -g cordova`)
+```
+ionic build browser
 ```
 
 replace the repo build directory with the newly compiled files
