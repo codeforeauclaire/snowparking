@@ -3,7 +3,7 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
 ## Dependencies to compile for web app
 
 * node.js
-* ionic cli  (`sudo npm update ionic -g`)
+* ionic cli  (`sudo npm install ionic -g` || `sudo npm update ionic -g`)
 
 From this ionic directory type ```ionic info``` to see your system information
 
