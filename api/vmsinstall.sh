@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Update all software & install new
-#sudo apt-get update
-#sudo apt-get upgrade -y
-#sudo apt-get install -y git mongodb
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install -y git mongodb
 
 # Clone repository
-#git clone https://github.com/codeforeauclaire/snowparking.git ~/
+git clone https://github.com/codeforeauclaire/snowparking.git ~/
 
 # Install Node Version Manager (nvm)
 ## Basic install
