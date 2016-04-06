@@ -1,10 +1,20 @@
-Dev setup instruction
-1. npm install -g nodemon
-1. npm install --save
-1. ./serve-node
-(These instructions need further fleshing out and test on a fresh machine)
+## VMS setup instructions
 
-Noe from Anthony: I may be doing this wrong, I'm used to Meteor.js and not sure standards around raw node.js projects
+1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH install
+1. Quick install Step 1 of 2 (Install foundation >> reconnect so NVM will work)
+ 1. `sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/codeforeauclaire/snowparking.git && curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash && exit`
+1. Reconnect (SSH in again)
+1. Quick install Step 2 of 2 (Alternatively read vmsquickinstall and run manually)
+ 1. `cd snowparking/api && ./vmsquickinstall`
+1. Run the application
+ 1. `cd snowparking/api`
+ 1. `./serve-node`
+ 1. Sanity check the api is working via your browser at http://[vms-ip]/status
+ 1. Edit a file to see changes in your browser instantly
+
+## Production setup instructions
+
+I'm probably doing this wrong.  I'm used to Meteor.js and not sure standards around raw node.js projects - Anthony May 2016
 
 1. Setup server
  1. Make free tier Ubuntu server with AWS
