@@ -1,15 +1,10 @@
 ## VMS setup instructions
 
-1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH install
-1. Quick install Step 1 of 2 (Install foundation >> reconnect so NVM will work)
- 1. `sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/codeforeauclaire/snowparking.git && curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash && exit`
-1. Reconnect (SSH in again)
-1. Quick install Step 2 of 2 (Alternatively read vmsquickinstall and run manually)
- 1. `cd snowparking/api && ./vmsquickinstall`
-1. Run the application
- 1. `cd snowparking/api`
- 1. `./serve-node`
- 1. Sanity check the api is working via your browser at http://[vms-ip]/status
+1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH in >> Run (or read) quick install
+1. `curl -o- https://raw.githubusercontent.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash` # TODO: See if need exit >> reconnect
+1. Run api app
+ 1. `(cd ~/snowparking/api && ./serve-node)`
+ 1. Load http://{vms-ip}/status in your browser
  1. Edit a file to see changes in your browser instantly
 
 ## Production setup instructions
