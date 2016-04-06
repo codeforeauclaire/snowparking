@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+{ # this ensures the entire script is downloaded #
+
 # Update all software & install new
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y git mongodb
 
@@ -19,3 +21,5 @@ npm install -g nodemon
 
 # Install all packages for snowparking api
 (cd /root/snowparking/api && npm install --save)
+
+} # this ensures the entire script is downloaded #
