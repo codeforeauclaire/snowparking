@@ -1,8 +1,8 @@
 ## VMS setup instructions
 
 1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH in >> Run (or read) quick install
-1. `curl -o- https://raw.githubusercontent.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash` # TODO: See if need exit >> reconnect
-1. Run api app
+1. `curl -o- https://rawgit.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash && exit`
+1. SSH in again >> run api app
  1. `(cd ~/snowparking/api && ./serve-node)`
  1. Load http://{vms-ip}/status in your browser
  1. Edit a file to see changes in your browser instantly
