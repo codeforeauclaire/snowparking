@@ -1,4 +1,4 @@
-## VMS Development setup instructions
+## VMS development enviornment setup instructions
 
 1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH in >> Run (or read) vms quick install
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
