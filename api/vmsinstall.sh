@@ -20,4 +20,4 @@ nvm install v5.10.1
 npm install -g nodemon
 
 # Install all packages for snowparking api
-(cd ~/snowparking/api npm install --save)
+(cd ~/snowparking/api && npm install --save)
