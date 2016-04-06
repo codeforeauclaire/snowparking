@@ -83,6 +83,8 @@ application/json
 ```
 *However IFTTT doesn't want to pass it along nicely.  It may be due to the city's Base64 email body encoding.  More investigation may solve this, but it could take a few hours of developer time, and the subject we expect to suffice.*
 
+*Newly discovered potential workaround: Use MailGun.  They give 10k free emails per account, should be more than enough for the lifetime of this app.  I think they have a solid mail API that could work for this - Anthony April 6th 2016*
+
 *This could be resolved maybe using Zapier instead with custom receiver addresses, and optionally a gmail forwarding to reformat it. However they have a free zap limit we don't want to test (and they change it from time to time). There also may be another solution using IFTTT we haven't discovered.*
 
 ## Proposed API Infrastructure
