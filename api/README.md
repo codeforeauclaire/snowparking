@@ -36,3 +36,7 @@ I'm probably doing this wrong.  I'm used to Meteor.js and not sure standards aro
  1. Open up port 3000 as needed [StackOverflow post](https://stackoverflow.com/questions/9348111/i-cant-access-my-node-js-server-on-my-aws-ec2-isntance-from-the-outside)
 1. Confirm running
  1. Go to http://localhost:3000
+
+## TODO
+
+1. Cleanup all the bin files to be more coherent

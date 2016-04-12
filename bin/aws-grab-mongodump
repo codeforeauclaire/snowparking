@@ -1,0 +1,2 @@
+# Hacked script Anthony using to pull down production data
+scp ubuntu@ec2-54-191-70-130.us-west-2.compute.amazonaws.com:~/*.tar ./

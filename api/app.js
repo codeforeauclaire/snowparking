@@ -86,6 +86,14 @@ function getEndTime(daysAdd) {
 }
 
 router.get('/status', function(req, res) {
+	console.log('Called: /status');
+	console.log('TODO: Use this data intelligently in return.');
+	useDb(function(db, done) {
+		var cursor = db.collection('notifications').find({ });
+		cursor.each(function(err, doc) {
+			console.log(doc);
+		});
+	});
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	res.json(
 		[

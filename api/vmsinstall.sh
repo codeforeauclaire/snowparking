@@ -22,4 +22,7 @@ npm install -g nodemon
 # Install all packages for snowparking api
 (cd /root/snowparking/api && npm install --save)
 
+# Setup database for development
+(cd /root/snowparking/api && ./bin/mongo-restore-dev-data)
+
 } # this ensures the entire script is downloaded and run #
