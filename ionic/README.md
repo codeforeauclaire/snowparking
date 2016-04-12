@@ -8,14 +8,14 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
 From this ionic directory type ```ionic info``` to see your system information
 
 ```
-EXAMPLE system information:  
-  
-Cordova CLI: 6.0.0  
-Ionic Version: 2.0.0-beta.3  
-Ionic CLI Version: 2.0.0-beta.22  
-Ionic App Lib Version: 2.0.0-beta.12  
-OS: Distributor ID:     Debian Description:     Debian GNU/Linux 7.9 (wheezy)  
-Node Version: v5.8.0  
+EXAMPLE system information:
+
+Cordova CLI: 6.0.0
+Ionic Version: 2.0.0-beta.3
+Ionic CLI Version: 2.0.0-beta.22
+Ionic App Lib Version: 2.0.0-beta.12
+OS: Distributor ID:     Debian Description:     Debian GNU/Linux 7.9 (wheezy)
+Node Version: v5.8.0
 ```
 
 Install ionic project requirements, from ionic directory type:
@@ -24,8 +24,8 @@ Install ionic project requirements, from ionic directory type:
 npm install
 ```
 
-if reinstalling from older version of the project, I recommend completely removing  
-everything and starting over, including the ```node_modules``` directory  
+if reinstalling from older version of the project, I recommend completely removing
+everything and starting over, including the ```node_modules``` directory
 
 ## Compile for web app
 
@@ -46,7 +46,7 @@ replace the repo build directory with the newly compiled files
 from the repo root directory type:
 
 ```
-rm -rf build  
+rm -rf build
 cp -r ionic/www/build .
 ```
 
@@ -63,7 +63,7 @@ ionic upload
 if you are prompted for username and password, use these values:
 
 ```
-c4ec@digitalfarrier.com  
+c4ec@digitalfarrier.com
 code4eauclaire
 ```
 
