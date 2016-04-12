@@ -1,14 +1,33 @@
 This is the Ionic application readme for the Eau Claire Snowparking project [WIP]
 
+## VMS Quick install [WIP]
+
+1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH in >> Run (or read) vms quick install
+ 1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/ionic/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
+1. Run api app
+     1. `(cd ~/snowparking/ionic && ionic serve)`
+     1. Load up url presented on command line in browser
+     1. Confirm ionic serve is working: Edit inside <ion-title> in /snowparking/ionic/app/pages/home/home.html and browser should automatically refresh
+
 ## Dependencies to compile for web app
 
 * node.js
-* ionic cli  (`sudo npm install ionic -g` || `sudo npm update ionic -g`)
+* ionic cli  (`sudo npm install ionic@beta -g` || `sudo npm update ionic@beta -g`)
 
 From this ionic directory type ```ionic info``` to see your system information
 
 ```
-EXAMPLE system information:
+EXAMPLE system information (Anthony / vms):
+
+Cordova CLI: 6.1.1
+Ionic Framework Version: 2.0.0-beta.3
+Ionic CLI Version: 2.0.0-beta.24
+Ionic App Lib Version: 2.0.0-beta.14
+OS: Distributor ID:	Ubuntu Description:	Ubuntu 14.04.4 LTS
+Node Version: v5.8.0
+
+```
+EXAMPLE system information (Lowell):
 
 Cordova CLI: 6.0.0
 Ionic Version: 2.0.0-beta.3
