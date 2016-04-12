@@ -25,6 +25,7 @@ Ionic CLI Version: 2.0.0-beta.24
 Ionic App Lib Version: 2.0.0-beta.14
 OS: Distributor ID:	Ubuntu Description:	Ubuntu 14.04.4 LTS
 Node Version: v5.8.0
+```
 
 ```
 EXAMPLE system information (Lowell):
