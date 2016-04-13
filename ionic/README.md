@@ -7,7 +7,7 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
 1. Run api app
      1. `(cd ~/snowparking/ionic && ionic serve)`
      1. Load up url presented on command line in browser
-     1. Edit <ion-title> in ~/snowparking/ionic/app/pages/home/home.html and see browser auto-refresh
+     1. Edit &lt;ion-title&gt; in ~/snowparking/ionic/app/pages/home/home.html and see browser auto-refresh
 
 ## Dependencies to compile for web app
 
