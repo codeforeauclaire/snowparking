@@ -2,7 +2,7 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
 
 ## VMS Quick install
 
-1. Create a new Digital Ocean Ubuntu 14.04.4 machine (1GB+ recommended) >> SSH in >> Run (or read) vms quick install
+1. Create a new Digital Ocean Ubuntu 14.04.4 machine (1gb+ recommended) >> SSH in >> Run (or read) vms quick install
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/ionic/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
 1. Run api app
      1. `(cd ~/snowparking/ionic && ionic serve)`
