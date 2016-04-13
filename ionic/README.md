@@ -6,7 +6,7 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/ionic/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
 1. Run api app
      1. `(cd ~/snowparking/ionic && ionic serve)`
-     1. Load url next to `√ Running dev server` in your web browser
+     1. Load url next to `√ Running dev server:  http://...` in your web browser
      1. Edit &lt;ion-title&gt; in ~/snowparking/ionic/app/pages/home/home.html and see browser auto-refresh
 
 ## Dependencies to compile for web app
