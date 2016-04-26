@@ -5,7 +5,7 @@
  1. `export GHUSER='AnthonyAstige'` (Replace AnthonyAstige with your username)
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
 1. Run api app
- 1. `(cd ~/snowparking/api && ./bin/serve-node)`
+ 1. `(cd ~/snowparking/api/bin && ./serve-node)`
  1. Load http://{vms-ip}:3050/status in your browser
  1. Edit a file to see changes in your browser instantly
 
