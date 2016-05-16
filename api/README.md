@@ -1,4 +1,6 @@
-## VMS development enviornment setup instructions
+## VMS Easy setup development environment
+
+Use these instructions to setup a temporary* development environment of this project.
 
 1. Fork this repository
 1. Create a new [Virtual Machine](http://vms.codeforeauclaire.org/) >> SSH in >> Run (or read) vms quick install
@@ -8,6 +10,8 @@
  1. `(cd ~/snowparking/api/bin && ./serve-node)`
  1. Load http://{vms-ip}:3050/status in your browser
  1. Edit a file to see changes in your browser instantly
+
+*For a permanent development environment we recommend you read the referenced script above to install locally.
 
 ## Production setup instructions
 
