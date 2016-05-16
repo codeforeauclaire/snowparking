@@ -1,7 +1,7 @@
 ## VMS development enviornment setup instructions
 
 1. Fork this repository
-1. Create a new Digital Ocean Ubuntu 14.04.4 machine >> SSH in >> Run (or read) vms quick install
+1. Create a new [Virtual Machine](http://vms.codeforeauclaire.org/) >> SSH in >> Run (or read) vms quick install
  1. `export GHUSER='AnthonyAstige'` (Replace AnthonyAstige with your username)
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/api/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
 1. Run api app
