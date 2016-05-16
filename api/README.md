@@ -1,3 +1,7 @@
+# Snowparking :: API
+
+Receives emails from the city when a snow emergency occurs, and provides an API for the front endto easily know snow emergency statuses.
+
 ## VMS Easy setup development environment
 
 Use these instructions to setup a temporary* development environment of this project.

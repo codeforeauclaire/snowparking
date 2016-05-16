@@ -1,4 +1,6 @@
-This is the Ionic application readme for the Eau Claire Snowparking project [WIP]
+# Snowparking :: Ionic
+
+Reads from the Snowparking API to provide the citizens of Eau Claire snow parking emergency statuses.
 
 ## VMS Easy setup development environment
 
