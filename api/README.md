@@ -49,4 +49,5 @@ I'm probably doing this wrong.  I'm used to Meteor.js and not sure standards aro
 
 ## TODO
 
+1. Finish implementing [SPECS.md](./SPECS.md)
 1. Cleanup all the bin files to be more coherent
