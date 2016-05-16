@@ -1,6 +1,8 @@
 This is the Ionic application readme for the Eau Claire Snowparking project [WIP]
 
-## VMS Quick install
+## VMS Easy setup development environment
+
+Use these instructions to setup a temporary* development environment of this project.
 
 1. Create a new [Virtual Machine](http://vms.codeforeauclaire.org/) (1gb+ recommended) >> SSH in >> Run (or read) vms quick install
  1. `curl -L -o- https://rawgit.com/codeforeauclaire/snowparking/master/ionic/vmsinstall.sh | bash && source ~/.nvm/nvm.sh`
@@ -8,6 +10,8 @@ This is the Ionic application readme for the Eau Claire Snowparking project [WIP
      1. `(cd ~/snowparking/ionic && ionic serve)`
      1. Load url next to **√ Running dev server:  http://...** in your web browser
      1. Edit &lt;ion-title&gt; in ~/snowparking/ionic/app/pages/home/home.html and see browser auto-refresh
+
+*For a permanent development environment we recommend you read the referenced script above to install locally.
 
 ## Dependencies to compile for web app
 
