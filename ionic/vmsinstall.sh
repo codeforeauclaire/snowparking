@@ -18,7 +18,7 @@ echo "vm.vfs_cache_pressure = 50" >> /etc/sysctl.conf
 sudo swapon /swapfile
 
 # Clone repository
-git clone https://github.com/codeforeauclaire/snowparking.git /root/snowparking
+git clone https://github.com/$GHUSER/snowparking.git /root/snowparking
 
 # Install Node Version Manager (nvm)
 ## Basic install
